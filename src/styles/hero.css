@@ -28,21 +28,45 @@
 
 .main__content h1 {
     font-size: 3rem;
-    background-image: linear-gradient(to top, #707070 0%, #32CD32 100%);
+    background-image: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff 0%,
+        #95ff4f 21%,
+        #ffffff 52%,
+        #a7ff6d 78%,
+        #ffffff 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .main__content h2 {
     font-size: 2rem;
-    background-image: linear-gradient(to top, #32CD32 0%, #707070 100%);
+    background-image: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff 0%,
+        #95ff4f 21%,
+        #ffffff 52%,
+        #a7ff6d 78%,
+        #ffffff 100%
+    );
     text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .main__content h3 {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #32CD32 0%, #707070 100%);
+    background-image: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff 0%,
+        #95ff4f 21%,
+        #ffffff 52%,
+        #a7ff6d 78%,
+        #ffffff 100%
+    );
     text-align: center;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -57,7 +81,15 @@
 
 .main__btn {
     font-size: 1rem;
-    background-image: linear-gradient(to top, #707070 0%, #32CD32 100%);
+    background-image: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff 0%,
+        #95ff4f 21%,
+        #ffffff 52%,
+        #a7ff6d 78%,
+        #ffffff 100%
+    );
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -100,4 +132,36 @@
     .main__content h2 { font-size: 2rem; }
     .main__content p { font-size: 1.5rem; margin-top: 2rem; }
     .main__btn { padding: 12px 36px; margin: 2.5rem 0; }
+}
+.glass-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #5EA52F;
+  object-fit: cover;
+}
+
+.hero-text {
+  flex: 1;
+  color: #fff;
+  padding-right: 20px;
+}
+
+.hero-img {
+  flex: 0.4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

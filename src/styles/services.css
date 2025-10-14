@@ -12,12 +12,12 @@
 .services h1 {
   background-image: linear-gradient(
     to right,
-    #5ea52f 0%,
-    #707070 0%,
-    #5ea52f 21%,
-    #32cd32 52%,
-    #5ea52f 78%,
-    #707070 100%
+    #ffffff 0%,
+    #ffffff 0%,
+    #95ff4f 21%,
+    #ffffff 52%,
+    #a7ff6d 78%,
+    #ffffff 100%
   );
   background-size: 100%;
   margin-bottom: 0.5rem;
@@ -29,12 +29,12 @@
 .services h2 {
   background-image: linear-gradient(
     to right,
-    #5ea52f 0%,
-    #707070 0%,
-    #5ea52f 21%,
-    #32cd32 52%,
-    #5ea52f 78%,
-    #707070 100%
+    #ffffff 0%,
+    #ffffff 0%,
+    #95ff4f 21%,
+    #ffffff 52%,
+    #a7ff6d 78%,
+    #ffffff 100%
   );
   background-size: 100%;
   margin-bottom: 0.5rem;
@@ -164,4 +164,189 @@
     max-width: 400px;
     margin: 1rem auto;
   }
+}
+
+.about-text {
+  max-width: 800px;
+  line-height: 1.4;
+  font-size: 1rem;
+  margin: 0 auto 30px;
+  background-image: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 0%,
+    #95ff4f 21%,
+    #ffffff 52%,
+    #a7ff6d 78%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Compact skill layout */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.skill-category h2 {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  background-image: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 0%,
+    #95ff4f 21%,
+    #ffffff 52%,
+    #a7ff6d 78%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skill-category p {
+  font-size: 0.95rem;
+  line-height: 1.3;
+  color: #ccc;
+  margin-bottom: 0;
+}
+
+/* Compact overall section */
+.services.compact {
+  padding: 40px 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .services h1 {
+    font-size: 1.8rem;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Home Page Project & Game Cards ===== */
+.project-card,
+.game-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  border-radius: 12px;
+  overflow: hidden;
+  padding: 1rem;
+  min-height: 300px;
+}
+
+.card-overlay {
+  background: rgba(0, 0, 0, 0.73);
+  border-radius: 10px;
+  padding: 0.8rem;
+  flex-grow: 1;
+}
+
+.card-overlay h2 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  color: #ddd;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.dark-bg {
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 8px;
+  padding: 0.5rem;
+  margin-top: 0.8rem;
+}
+
+/* Make buttons look consistent inside dark-bg */
+.dark-bg a button {
+  background-color: #5ea52f;
+}
+
+.dark-bg a button:hover {
+  background-color: #32cd32;
+}
+/* ===== Experience Cards ===== */
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.experience-card {
+  background: rgba(0,0,0,0.6);
+  padding: 1.5rem;
+  border-radius: 12px;
+  background-image: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 0%,
+    #95ff4f 21%,
+    #ffffff 52%,
+    #a7ff6d 78%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: transform 0.3s ease;
+}
+
+.experience-card h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  background-image: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 0%,
+    #95ff4f 21%,
+    #ffffff 52%,
+    #a7ff6d 78%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.experience-date {
+  display: block;
+  font-size: 0.85rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.experience-card ul {
+  list-style: disc inside;
+  line-height: 1.4;
+}
+
+.experience-card li {
+  font-size: 0.95rem;
+  margin-bottom: 0.5rem;
+}
+
+.experience-card:hover {
+  transform: scale(1.03);
+}
+
+/* Education section */
+.education {
+  background: rgba(0,0,0,0.5);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  margin-top: 20px;
 }

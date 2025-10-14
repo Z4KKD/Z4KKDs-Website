@@ -22,10 +22,17 @@
     padding: 0 50px;
 }
 
+/* Navbar Logo Gradient & Hover */
 #navbar__logo {
-    background-color: #5EA52F;
-    background-image: linear-gradient(to top, #707070 0%, #32CD32 100%);
-    background-size: 100%;
+    background-image: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff 0%,
+        #95ff4f 21%,
+        #ffffff 52%,
+        #a7ff6d 78%,
+        #ffffff 100%
+    );
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -35,6 +42,16 @@
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
+    transition: background 0.3s ease; /* smooth hover transition */
+}
+
+/* Hover gradient for logo */
+#navbar__logo:hover {
+    background-image: linear-gradient(
+        to right,
+        #5EA52F,
+        #32CD32
+    );
 }
 
 .navbar__logo--img {
@@ -58,16 +75,36 @@
 .navbar__item { height: 80px; }
 
 .navbar__links {
-    color: #fff;
+    background-image: linear-gradient(
+        to right,
+        #ffffff 0%,
+        #ffffff 0%,
+        #95ff4f 21%,
+        #ffffff 52%,
+        #a7ff6d 78%,
+        #ffffff 100%
+    );
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
     padding: 0 1rem;
     height: 100%;
+    transition: background 0.3s ease;
 }
 
-.navbar__links:hover { color: #5EA52F; transition: all 0.3 ease; }
+.navbar__links:hover {
+    background-image: linear-gradient(
+        to right,
+        #5EA52F,
+        #32CD32
+    );
+}
+
 
 /* Responsive Navbar */
 @media screen and (max-width: 960px) {
