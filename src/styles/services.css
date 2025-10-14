@@ -1,0 +1,167 @@
+/* src/styles/services.css */
+
+.services {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0 60px;
+  margin-top: 0;
+}
+
+.services h1 {
+  background-image: linear-gradient(
+    to right,
+    #5ea52f 0%,
+    #707070 0%,
+    #5ea52f 21%,
+    #32cd32 52%,
+    #5ea52f 78%,
+    #707070 100%
+  );
+  background-size: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services h2 {
+  background-image: linear-gradient(
+    to right,
+    #5ea52f 0%,
+    #707070 0%,
+    #5ea52f 21%,
+    #32cd32 52%,
+    #5ea52f 78%,
+    #707070 100%
+  );
+  background-size: 100%;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services p {
+  background-image: linear-gradient(
+    to right,
+    #ffffff 0%,
+    #ffffff 0%,
+    #95ff4f 21%,
+    #ffffff 52%,
+    #a7ff6d 78%,
+    #ffffff 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.services__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-bottom: 50px;
+}
+
+/* ===== Base Card Styling ===== */
+.services__card,
+.services__cardprojects,
+.services__cardgames {
+  margin: 1rem;
+  border-radius: 6px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  height: 400px;
+  width: 400px;
+  transition: transform 0.25s ease-in-out;
+}
+
+.services__card:hover,
+.services__cardprojects:hover,
+.services__cardgames:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ===== Buttons ===== */
+.services__card button,
+.services__cardprojects button,
+.services__cardgames button {
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  background: #5ea52f;
+  font-size: 1rem;
+  cursor: pointer;
+  min-width: 140px;
+  align-self: center;
+}
+
+.services__card button:hover,
+.services__cardprojects button:hover,
+.services__cardgames button:hover {
+  background: #32cd32;
+  transition: background 0.3s ease;
+}
+
+/* ===== Compact Layouts ===== */
+.compact-section {
+  min-height: auto;
+  padding: 40px 0;
+}
+
+.compact-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding-bottom: 20px;
+}
+
+.compact-card {
+  height: 300px !important;
+  width: 300px !important;
+  margin: 0.5rem;
+  padding: 15px;
+}
+
+.compact-card h2 {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.compact-card button {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+}
+
+/* Button group for multiple links */
+.button-group {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+
+/* ===== Responsive ===== */
+@media screen and (max-width: 820px) {
+  .services__card,
+  .services__cardprojects,
+  .services__cardgames {
+    width: 90%;
+    max-width: 400px;
+    margin: 1rem auto;
+  }
+}

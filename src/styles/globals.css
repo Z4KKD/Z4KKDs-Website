@@ -1,0 +1,14 @@
+/* src/styles/globals.css */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Ensure the body or a main container handles the full height */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
