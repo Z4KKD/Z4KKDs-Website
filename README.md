@@ -27,10 +27,8 @@ This project showcases **my games, open-source projects, and technical skills**,
 ## 🖼️ Screenshots
 
 ![Portfolio Hero](src/assets/Z4KKD.gif)
-*Hero Section with animated GIF.*
 
 ![Project Card](https://github.com/Z4KKD/Z4KKDs-Website/blob/main/FirstSS.png)
-*Example of a project card with multiple buttons.*
 
 ---
 
