@@ -4,6 +4,7 @@ Welcome to the official portfolio of **Zachary Duncan (Zakk)** – a Full-Stack 
 
 This project showcases **my games, open-source projects, and technical skills**, all in one modern, responsive React website.
 
+
 ---
 
 ## 🚀 Features
@@ -28,7 +29,7 @@ This project showcases **my games, open-source projects, and technical skills**,
 ![Portfolio Hero](src/assets/Z4KKD.gif)
 *Hero Section with animated GIF.*
 
-![Project Card](src/assets/ZakksForms.png)
+![Project Card](https://github.com/Z4KKD/Z4KKDs-Website/blob/main/FirstSS.png)
 *Example of a project card with multiple buttons.*
 
 ---
