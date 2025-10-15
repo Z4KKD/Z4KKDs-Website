@@ -28,7 +28,7 @@ This project showcases **my games, open-source projects, and technical skills**,
 
 ![Portfolio Hero](src/assets/Z4KKD.gif)
 
-![Project Card](https://github.com/Z4KKD/Z4KKDs-Website/blob/main/FirstSS.png)
+![Project Card](https://github.com/Z4KKD/Z4KKDs-Website/blob/main/SS.png)
 
 ---
 
