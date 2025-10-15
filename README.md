@@ -136,22 +136,3 @@ Skilled in **backend optimization**, **modern frontend frameworks**, and **secur
 
 © **Z4KKD 2025**. All rights reserved.
 
----
-
-## 🧩 Repository Overview
-
-```
-Z4KKD-PORTFOLIO
-├── public/
-│   └── Z4KKD.png
-├── src/
-│   ├── assets/
-│   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   ├── App.jsx
-│   └── main.jsx
-├── package.json
-├── vite.config.js
-└── README.md
-```
