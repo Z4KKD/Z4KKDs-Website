@@ -52,21 +52,22 @@ const ExperienceAccordion = () => {
   return (
     <section className="experienceAccordion" id="experience">
       {/* --- ABOUT ME (always open) --- */}
-      <div className="accordionCard glass-card">
-        <div className="accordionHeader always-open">
-          <h2>About Me</h2>
-        </div>
-        <div className="accordionBody open">
-          <p className="about-text">
-            Full Stack Software Engineer with 5+ years of experience building
-            production-grade web applications, APIs, and developer tools across
-            logistics, SaaS, and game development. Skilled in backend
-            optimization, modern frontend frameworks, and secure authentication.
-            Proven ability to ship fast and deliver high-value solutions that
-            scale.
-          </p>
-        </div>
-      </div>
+<div className="accordionCard glass-card always-open">
+  <div className="accordionHeader">
+    <h2>About Me</h2>
+  </div>
+  <div className="accordionBody open">
+    <p className="about-text">
+      Full Stack Software Engineer with 5+ years of experience building
+      production-grade web applications, APIs, and developer tools across
+      logistics, SaaS, and game development. Skilled in backend
+      optimization, modern frontend frameworks, and secure authentication.
+      Proven ability to ship fast and deliver high-value solutions that
+      scale.
+    </p>
+  </div>
+</div>
+
 
       {/* --- PROFESSIONAL EXPERIENCE (no header label) --- */}
       {experienceData.map((exp, idx) => (

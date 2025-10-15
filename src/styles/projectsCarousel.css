@@ -6,12 +6,24 @@
 }
 
 .projectsCarousel h1 {
+  position: relative;
+  z-index: 1;
   background: linear-gradient(90deg,#ffffff,#95ff4f,#a7ff6d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  z-index: 1;
-  font-size: 1.8rem;
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
+.projectsCarousel h1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  background: rgba(94, 165, 47, 0.2); /* greenish glow */
+  filter: blur(8px);
+  z-index: -1; /* behind the text */
+}
+
 .carouselHeader {
   width: 100%;
   max-width: 960px;

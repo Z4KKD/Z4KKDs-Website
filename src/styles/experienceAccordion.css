@@ -139,6 +139,18 @@
   max-height: 1000px; /* fallback for animations */
   transition: max-height 0.5s ease-in-out;
 }
+/* Make always-open headers non-clickable and remove hover effects */
+.accordionCard.always-open .accordionHeader {
+  cursor: default;        /* not clickable */
+  pointer-events: none;   /* prevent clicks entirely */
+}
+
+.accordionCard.always-open .accordionHeader:hover {
+  transform: none;        /* remove hover scale */
+  background: none;       /* remove hover background */
+  box-shadow: none;       /* remove hover shadow */
+}
+
 
 /* Responsive tweak */
 @media (max-width: 600px) {
