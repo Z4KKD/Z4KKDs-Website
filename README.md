@@ -45,19 +45,50 @@ This project showcases **my games, open-source projects, and technical skills**,
 ## 📂 Project Structure
 
 ```
-src/
-├─ assets/           # Images & GIFs for hero, projects, and games
-├─ components/
-│  ├─ Navbar.jsx
-│  ├─ Hero.jsx
-│  ├─ Services.jsx
-│  └─ Footer.jsx
-├─ styles/
-│  ├─ navbar.css
-│  ├─ hero.css
-│  └─ services.css
-├─ pages/
-│  └─ Home.jsx
+Z4KKD-PORTFOLIO
+├── node_modules/
+├── public/
+│   ├── Z4KKD.png
+├── src/
+│   ├── assets/
+│   │   ├── ChatBotAI.png
+│   │   ├── DataVisualizationTool.png
+│   │   ├── game3.png
+│   │   ├── game4.png
+│   │   ├── Myself.jpg
+│   │   ├── Z4KKD.gif
+│   │   ├── ZakksForms.png
+│   ├── components/
+│   │   ├── ExperienceAccordion.jsx
+│   │   ├── Footer.jsx
+│   │   ├── HeroInteractive.jsx
+│   │   ├── Navbar.jsx
+│   │   ├── ParticlesBackground.jsx
+│   │   ├── ProjectsCarousel.jsx
+│   │   ├── SkillsInteractive.jsx
+│   ├── Pages/
+│   │   ├── Home.jsx
+│   ├── styles/
+│   │   ├── experienceAccordion.css
+│   │   ├── footer.css
+│   │   ├── globals.css
+│   │   ├── heroInteractive.css
+│   │   ├── navbar.css
+│   │   ├── particlesBackground.css
+│   │   ├── projectsCarousel.css
+│   │   ├── skillsInteractive.css
+│   ├── App.jsx
+│   └── main.jsx
+├── .gitattributes
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+├── SS.png
+└── vite.config.js
+
 ```
 
 ---
