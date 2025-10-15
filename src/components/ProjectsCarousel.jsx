@@ -1,4 +1,3 @@
-// src/components/ProjectsCarousel.jsx
 import React, { useRef } from "react";
 import "../styles/projectsCarousel.css";
 
@@ -25,8 +24,7 @@ const ProjectsCarousel = ({ projects = [] }) => {
     containerRef.current.classList.remove("dragging");
   };
 
-  const onMouseMove = (e, idx) => {
-    // drag-to-scroll
+  const onMouseMove = (e) => {
     if (!isDown.current) return;
     e.preventDefault();
     const x = e.pageX - containerRef.current.offsetLeft;
@@ -36,10 +34,10 @@ const ProjectsCarousel = ({ projects = [] }) => {
 
   const handleCardMouseMove = (e, el) => {
     const rect = el.getBoundingClientRect();
-    const px = (e.clientX - rect.left) / rect.width; // 0..1
+    const px = (e.clientX - rect.left) / rect.width;
     const py = (e.clientY - rect.top) / rect.height;
-    const rx = (py - 0.5) * 10; // rotateX
-    const ry = (px - 0.5) * -10; // rotateY
+    const rx = (py - 0.5) * 10;
+    const ry = (px - 0.5) * -10;
     el.style.transform = `rotateX(${rx}deg) rotateY(${ry}deg) scale(1.03)`;
   };
 
@@ -56,7 +54,7 @@ const ProjectsCarousel = ({ projects = [] }) => {
         onMouseDown={onMouseDown}
         onMouseLeave={onMouseLeave}
         onMouseUp={onMouseUp}
-        onMouseMove={(e) => onMouseMove(e)}
+        onMouseMove={onMouseMove}
       >
         {projects.map((project, idx) => (
           <div
@@ -64,33 +62,39 @@ const ProjectsCarousel = ({ projects = [] }) => {
             className="tiltCard"
             onMouseMove={(e) => handleCardMouseMove(e, e.currentTarget)}
             onMouseLeave={(e) => handleCardLeave(e.currentTarget)}
-            style={{
-              backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.28), rgba(0,0,0,0.72)), url(${project.img})`,
-            }}
           >
-            <div className="projectCard">
+            <div
+              className="projectCard"
+              style={{
+                backgroundImage: `url(${project.img})`,
+              }}
+            >
               <div className="overlay">
-                <h2>{project.title}</h2>
-                <p className="desc">{project.description}</p>
-
-                <div className="buttonGroup">
-                  {project.links?.map((link, i) => (
-                    <a key={i} href={link.url} target="_blank" rel="noreferrer">
-                      <button>{link.label}</button>
-                    </a>
-                  ))}
-                  {project.link && (
-                    <a href={project.link} target="_blank" rel="noreferrer">
-                      <button>Play</button>
-                    </a>
-                  )}
+                <div className="overlay-top">
+                  <div className="title">{project.title}</div>
+                </div>
+                <div className="overlay-middle">
+                  <p className="desc">{project.description}</p>
+                </div>
+                <div className="overlay-bottom">
+                  <div className="buttonGroup">
+                    {project.links?.map((link, i) => (
+                      <a key={i} href={link.url} target="_blank" rel="noreferrer">
+                        <button>{link.label}</button>
+                      </a>
+                    ))}
+                    {project.link && (
+                      <a href={project.link} target="_blank" rel="noreferrer">
+                        <button>Play</button>
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         ))}
       </div>
-      <small className="hint">Drag horizontally or hover a card for tilt</small>
     </section>
   );
 };

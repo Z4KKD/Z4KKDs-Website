@@ -1,83 +1,121 @@
 .skillsInteractive {
   text-align: center;
-  background: #000;
+  background: transparent; /* let particles show */
+  padding: 3rem 1rem;
 }
 
 .skillsInteractive h1 {
   background: linear-gradient(90deg, #ffffff, #95ff4f, #a7ff6d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 30px;
-  font-size: 2rem;
+  margin-bottom: 40px;
+  font-size: 2.5rem;
 }
 
 .skillsGrid {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
+  gap: 25px;
+  max-width: 1200px; /* prevent spreading too wide */
+  margin: 0 auto;
 }
+
 
 .skillCard {
-  width: 220px;
-  height: 200px;
-  perspective: 1000px;
+  width: 170px;
+  height: 220px;
+  perspective: 1200px;
+  cursor: pointer;
 }
 
-.skillCard div {
+.cardInner {
   width: 100%;
   height: 100%;
-  border-radius: 12px;
-  background: linear-gradient(180deg, rgba(255,255,255,0.15), rgba(255,255,255,0.01));
-  backdrop-filter: blur(8px);
-  color: #fff;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.skillCard:hover .cardInner {
+  transform: rotateY(180deg);
+}
+
+/* Common styling for front and back */
+.cardFront,
+.cardBack {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
   padding: 20px;
-  cursor: pointer;
-}
-
-.skillCard:hover .cardFront {
-  transform: rotateY(180deg);
-}
-
-.skillCard:hover .cardBack {
-  transform: rotateY(0deg);
-}
-
-.cardFront {
-  position: absolute;
+  box-shadow: 0 0 20px rgba(94,165,47,0.4); /* subtle glow */
+  backdrop-filter: blur(10px);
+  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
+  color: #fff;
+  text-align: center;
+  transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
   backface-visibility: hidden;
-  font-size: 1.2rem;
-  font-weight: bold;
 }
 
+/* Front card */
+.cardFront h2 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+/* Back card */
 .cardBack {
   transform: rotateY(180deg);
-  backface-visibility: hidden;
-  font-size: 0.9rem;
 }
 
 .cardBack ul {
   list-style: none;
   padding: 0;
-  margin-bottom: 10px;
+  margin: 0 0 15px 0;
+  text-align: center;
 }
 
+.cardBack li {
+  margin: 4px 0;
+  font-size: 0.95rem;
+}
+
+/* Progress bar styling */
 .progressBar {
   width: 80%;
-  height: 6px;
-  background: rgba(255,255,255,0.2);
-  border-radius: 4px;
+  height: 8px;
+  background: rgba(94,165,47,0.2);
+  border-radius: 6px;
+  overflow: hidden;
 }
 
 .progress {
   height: 100%;
   background: #5ea52f;
-  border-radius: 4px;
-  transition: width 1s ease;
+  border-radius: 6px;
+  transition: width 1.2s ease-in-out;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 960px) {
+  .skillsGrid {
+    gap: 15px;
+  }
+  .skillCard {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skillCard {
+    width: 150px;
+    height: 150px;
+  }
 }

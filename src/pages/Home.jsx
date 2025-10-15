@@ -14,7 +14,6 @@ import myself from "../assets/myself.jpg";
 import project1 from "../assets/ZakksForms.png";
 import project2 from "../assets/DataVisualizationTool.png";
 import project3 from "../assets/ChatBotAI.png";
-import game2 from "../assets/game2.png";
 import game3 from "../assets/game3.png";
 import game4 from "../assets/game4.png";
 
@@ -55,12 +54,6 @@ const Home = () => {
       title: "Downhill Hurts",
       description: "Downhill snowboarding survival game.",
       link: "https://z4kkd.itch.io/downhill-hurts",
-    },
-    {
-      img: game2,
-      title: "Broke Booger",
-      description: "2D world-shaping platformer.",
-      link: "https://z4kkd.itch.io/broke-booger",
     },
   ];
 
