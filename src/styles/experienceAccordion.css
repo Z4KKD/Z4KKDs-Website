@@ -1,0 +1,160 @@
+.experienceAccordion {
+  width: 100%;          /* full width */
+  min-height: auto;    /* optional: cover full viewport height */
+  padding: 1px 1px;   /* internal spacing */
+  background: #000;     /* solid black background */
+  text-align: center;
+  box-sizing: border-box; /* include padding in width */
+}
+
+
+/* Gradient titles */
+.experienceAccordion h1 {
+  background: linear-gradient(90deg, #ffffff, #95ff4f, #a7ff6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 40px;
+  font-size: 2rem;
+}
+
+/* Glass card style */
+.accordionCard {
+  max-width: 1200px;     /* keeps card content aligned with hero */
+  width: 100%;           /* responsive */
+  margin: 20px auto;     /* center cards horizontally */
+  background: linear-gradient(180deg, rgba(255,255,255,0.15), rgba(255,255,255,0.01));
+  backdrop-filter: blur(10px);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Accordion Header (clickable area) */
+.accordionHeader {
+  padding: 22px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, background 0.3s ease, box-shadow 0.3s ease;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Hover & active effects */
+.accordionHeader:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(149, 255, 79, 0.3);
+}
+
+/* Gradient role titles */
+.accordionHeader h2 {
+  background: linear-gradient(90deg, #ffffff, #95ff4f, #a7ff6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+  font-size: 1.4rem;
+}
+
+.accordionHeader span {
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+/* Accordion Body Animation */
+.accordionBody {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+  padding: 0 30px;
+}
+
+/* Experience Bullets */
+.accordionBody ul {
+  list-style: disc inside;
+  padding: 20px 0;
+  color: #ddd;
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.accordionBody li {
+  margin-bottom: 0.6rem;
+}
+
+/* Text within opened sections */
+.accordionBody p {
+  color: #ddd;
+  line-height: 1.7;
+  padding: 15px 0;
+  text-align: left;
+  font-size: 1.05rem;
+}
+
+/* About and Education (accordion style) */
+.about-section,
+.education-section {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  width: 100%;
+  margin: 0 auto 50px auto;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  padding: 30px;
+}
+
+/* Shared clickable headers for About & Education */
+.about-section .accordionHeader,
+.education-section .accordionHeader {
+  justify-content: center;
+}
+
+/* Hover glow for About/Education */
+.about-section .accordionHeader:hover,
+.education-section .accordionHeader:hover {
+  transform: scale(1.02);
+  background: rgba(255, 255, 255, 0.12);
+  box-shadow: 0 0 10px rgba(149, 255, 79, 0.3);
+}
+
+/* Text inside About/Education */
+.about-text {
+  line-height: 1.7;
+  font-size: 1.1rem;
+  color: #ddd;
+  text-align: left;
+}
+
+.education-section p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #ddd;
+  text-align: left;
+}
+
+/* Smooth transitions on open/close */
+.accordionBody.open {
+  max-height: 1000px; /* fallback for animations */
+  transition: max-height 0.5s ease-in-out;
+}
+
+/* Responsive tweak */
+@media (max-width: 600px) {
+  .accordionHeader h2 {
+    font-size: 1.1rem;
+  }
+
+  .accordionHeader span {
+    font-size: 0.95rem;
+  }
+
+  .accordionBody {
+    padding: 0 15px;
+  }
+
+  .accordionCard {
+    max-width: 95%;
+  }
+}

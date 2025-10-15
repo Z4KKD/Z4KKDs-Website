@@ -1,12 +1,17 @@
 /* src/styles/footer.css */
 .footer__container {
-    background-color: #000000;
+    /* Make background transparent */
+    background-color: rgba(0, 0, 0, 0); /* fully transparent */
     padding: 5rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: auto;
+    width: 100%;
+    z-index: 10; /* ensure it's above particles */
+    position: relative; /* needed for z-index */
 }
+
+
 
 #footer__logo {
     color: #fff;

@@ -1,0 +1,83 @@
+.skillsInteractive {
+  text-align: center;
+  background: #000;
+}
+
+.skillsInteractive h1 {
+  background: linear-gradient(90deg, #ffffff, #95ff4f, #a7ff6d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+.skillsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skillCard {
+  width: 220px;
+  height: 200px;
+  perspective: 1000px;
+}
+
+.skillCard div {
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+  background: linear-gradient(180deg, rgba(255,255,255,0.15), rgba(255,255,255,0.01));
+  backdrop-filter: blur(8px);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.skillCard:hover .cardFront {
+  transform: rotateY(180deg);
+}
+
+.skillCard:hover .cardBack {
+  transform: rotateY(0deg);
+}
+
+.cardFront {
+  position: absolute;
+  backface-visibility: hidden;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.cardBack {
+  transform: rotateY(180deg);
+  backface-visibility: hidden;
+  font-size: 0.9rem;
+}
+
+.cardBack ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.progressBar {
+  width: 80%;
+  height: 6px;
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
+
+.progress {
+  height: 100%;
+  background: #5ea52f;
+  border-radius: 4px;
+  transition: width 1s ease;
+}
