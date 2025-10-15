@@ -1,134 +1,157 @@
-# Z4KKD Portfolio
+# 🧠 Z4KKD Portfolio
 
-Welcome to the official portfolio of **Zachary Duncan (Zakk)** – a Full-Stack Software Engineer with experience building production-grade web apps, APIs, and games.
-
-This project showcases **my games, open-source projects, and technical skills**, all in one modern, responsive React website.
-
+> **Official developer portfolio of [Zachary Duncan (Zakk)](https://github.com/Z4KKD)** — Full-Stack Software Engineer experienced in **React**, **.NET Core**, and **FastAPI**.  
+> Showcasing my **projects, games, and technical expertise** through a sleek, interactive React site.
 
 ---
 
-## 🚀 Features
+## 🚀 Overview
 
-* **Hero Section**: Personal introduction with animated GIF.
-* **About/Services Section**: Details my skills, technologies, and experience.
-* **Top Projects**:
+This project serves as a **modern developer portfolio** designed to highlight:
 
-  * Includes multiple links for projects (Live Site + Open Source).
-  * Each project card has a title, description, background image, and action buttons.
-* **Top Games**:
-
-  * Interactive game cards linking to playable games on [itch.io](https://z4kkd.itch.io/).
-  * Each card includes a title, description, background, and a "Play" button.
-* **Responsive Navbar**: Collapsible menu for mobile devices.
-* **Footer with Social Links**: Email, GitHub, LinkedIn, and Itch.io.
+- My **featured open-source projects** and live web apps  
+- My **indie games** hosted on [itch.io](https://z4kkd.itch.io/)  
+- A fully responsive, animated **React UI** with custom-built effects (3D tilt, particles, carousels)
 
 ---
 
-## 🖼️ Screenshots
+## ✨ Features
 
-![Portfolio Hero](src/assets/Z4KKD.gif)
-
-![Project Card](https://github.com/Z4KKD/Z4KKDs-Website/blob/main/FirstSS.png)
-
----
-
-## 🛠️ Technologies Used
-
-* **Frontend:** React, JavaScript, HTML, CSS
-* **Backend (Projects):** .NET Core, FastAPI, Django, Flask, Node.js/Express
-* **Databases:** PostgreSQL, SQL Server, MongoDB Atlas, SQLite, Azure SQL
-* **DevOps & Cloud:** Docker, Git, Azure, AWS, CI/CD Pipelines
-* **Testing & Methodologies:** xUnit, Pytest, Jest, Agile/Scrum
+- 🎬 **Hero Section** — Interactive intro card with tilt motion and animated GIF  
+- 💡 **Experience Accordion** — Expandable panels showing roles, education, and skills  
+- 🧩 **Skills Interactive Grid** — Flip cards with progress bars and tech stacks  
+- 🖼️ **Projects Carousel** — Scrollable 3D cards linking to live apps and repos  
+- 🎮 **Games Gallery** — Playable demos of original indie games  
+- 📱 **Responsive Design** — Works seamlessly across all devices  
+- 🔗 **Footer & Navbar** — Social links (GitHub, LinkedIn, Itch.io, Email)
 
 ---
 
-## 📂 Project Structure
+## 🛠️ Tech Stack
+
+**Frontend:** React (Vite), JavaScript, HTML5, CSS3  
+**Backend (Projects):** .NET Core, FastAPI, Django, Flask, Node.js/Express  
+**Databases:** PostgreSQL, SQL Server, MongoDB Atlas, SQLite, Azure SQL  
+**Cloud & DevOps:** Docker, Azure, AWS, Git, CI/CD  
+**Testing & Methodologies:** xUnit, Pytest, Jest, Agile/Scrum  
+
+---
+
+## 📸 Screenshots
+
+| Hero Section | Projects View |
+|:-------------:|:--------------:|
+| ![Hero](src/assets/Z4KKD.gif) | ![Projects](https://github.com/Z4KKD/Z4KKDs-Website/blob/main/SS.png) |
+
+---
+
+## 🧩 Directory Structure
 
 ```
 src/
-├─ assets/           # Images & GIFs for hero, projects, and games
-├─ components/
-│  ├─ Navbar.jsx
-│  ├─ Hero.jsx
-│  ├─ Services.jsx
-│  └─ Footer.jsx
-├─ styles/
-│  ├─ navbar.css
-│  ├─ hero.css
-│  └─ services.css
-├─ pages/
-│  └─ Home.jsx
+├── assets/           # Images & GIFs
+├── components/       # Modular UI components
+│   ├── Navbar.jsx
+│   ├── HeroInteractive.jsx
+│   ├── SkillsInteractive.jsx
+│   ├── ProjectsCarousel.jsx
+│   ├── ExperienceAccordion.jsx
+│   ├── ParticlesBackground.jsx
+│   └── Footer.jsx
+├── pages/
+│   └── Home.jsx
+├── styles/           # CSS Modules
+│   ├── heroInteractive.css
+│   ├── navbar.css
+│   ├── projectsCarousel.css
+│   ├── skillsInteractive.css
+│   ├── experienceAccordion.css
+│   ├── particlesBackground.css
+│   └── footer.css
 ```
 
 ---
 
-## 🎮 Top Games
+## 💻 Featured Projects
 
-* **Terminal Hero** – [Play](https://z4kkd.itch.io/terminalhero)
-* **Downhill Hurts** – [Play](https://z4kkd.itch.io/downhill-hurts)
-* **Broke Booger** – [Play](https://z4kkd.itch.io/broke-booger)
-
----
-
-## 💻 Top Projects
-
-1. **AI-Powered Form Builder**
-   Create smart forms quickly with AI-powered automation and validation.
-
-   * [Live Site](https://zakksforms.netlify.app/)
-   * [Open Source](https://github.com/Z4KKD/ZakksForms-Open-Source)
-
-2. **Data Visualization Tool**
-   Visualize datasets easily with dynamic charts and graphs.
-
-   * [Open Source](https://github.com/Z4KKD/Data-visualization-tool)
-
-3. **Chat Bot AI**
-   Intelligent chatbot that can answer questions and automate tasks.
-
-   * [Open Source](https://github.com/Z4KKD/Ai-ChatBot)
+| Project | Description | Links |
+|----------|--------------|-------|
+| 🧠 **AI-Powered Form Builder** | Create intelligent forms with automated validation and AI summaries. | [🌐 Live](https://zakksforms.netlify.app/) · [💾 Source](https://github.com/Z4KKD/ZakksForms-Open-Source) |
+| 📊 **Data Visualization Tool** | Build interactive charts from CSV/Excel with real-time filtering. | [💾 Source](https://github.com/Z4KKD/Data-visualization-tool) |
+| 🤖 **Chat Bot AI** | A Django + OpenAI chatbot capable of answering questions and fetching data. | [💾 Source](https://github.com/Z4KKD/Ai-ChatBot) |
 
 ---
 
-## 📥 Installation & Setup
+## 🎮 Featured Games
 
-1. Clone this repository:
+| Game | Description | Play |
+|------|--------------|------|
+| ⚔️ **Terminal Hero** | Browser-based text RPG — craft, gamble, and explore. | [▶️ Play](https://z4kkd.itch.io/terminalhero) |
+| 🏂 **Downhill Hurts** | Fast-paced snowboarding survival game. | [▶️ Play](https://z4kkd.itch.io/downhill-hurts) |
+| 🤢 **Broke Booger** | A grossly funny side-project game. | [▶️ Play](https://z4kkd.itch.io/broke-booger) |
+
+---
+
+## 🧱 Installation
+
+Clone and run the project locally:
 
 ```bash
+# Clone repo
 git clone https://github.com/Z4KKD/portfolio.git
-```
 
-2. Navigate to the project directory:
-
-```bash
+# Move into directory
 cd portfolio
-```
 
-3. Install dependencies:
-
-```bash
+# Install dependencies
 npm install
-```
 
-4. Start the development server:
-
-```bash
+# Start dev server
 npm start
 ```
 
-The app should now be running on [http://localhost:3000](http://localhost:3000).
+The app will run on **[http://localhost:3000](http://localhost:3000)**.
+
+---
+
+## 🧑‍💻 About Me
+
+Full-Stack Software Engineer with 5+ years of experience building **web apps, APIs, and developer tools** across logistics, SaaS, and game development.  
+Skilled in **backend optimization**, **modern frontend frameworks**, and **secure authentication systems** — with a focus on performance and scalability.
+
+📚 **Education:** B.S. Information Technology (Software Development), *Strayer University* — GPA: 4.0  
 
 ---
 
 ## 📬 Contact
 
-* Email: [zduncan93@gmail.com](mailto:zduncan93@gmail.com)
-* GitHub: [Z4KKD](https://github.com/Z4KKD)
-* LinkedIn: [Z4KKD](https://www.linkedin.com/in/z4kkd/)
-* Itch.io: [Z4KKD](https://z4kkd.itch.io/)
+- 📧 **Email:** [zduncan93@gmail.com](mailto:zduncan93@gmail.com)  
+- 💼 **LinkedIn:** [linkedin.com/in/z4kkd](https://www.linkedin.com/in/z4kkd/)  
+- 🧑‍💻 **GitHub:** [github.com/Z4KKD](https://github.com/Z4KKD)  
+- 🎮 **Itch.io:** [z4kkd.itch.io](https://z4kkd.itch.io/)  
 
 ---
 
 ## 🐱 License
 
-© Z4KKD 2025. All Rights Reserved.
+© **Z4KKD 2025**. All rights reserved.
+
+---
+
+## 🧩 Repository Overview
+
+```
+Z4KKD-PORTFOLIO
+├── public/
+│   └── Z4KKD.png
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── styles/
+│   ├── App.jsx
+│   └── main.jsx
+├── package.json
+├── vite.config.js
+└── README.md
+```
