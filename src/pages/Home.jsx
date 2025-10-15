@@ -10,7 +10,7 @@ import ParticlesBackground from "../components/ParticlesBackground";
 
 // Assets (keep your existing asset filenames)
 import heroImg from "../assets/Z4KKD.gif";
-import myself from "../assets/myself.jpg";
+import myself from "../assets/Myself.jpg";
 import project1 from "../assets/ZakksForms.png";
 import project2 from "../assets/DataVisualizationTool.png";
 import project3 from "../assets/ChatBotAI.png";
