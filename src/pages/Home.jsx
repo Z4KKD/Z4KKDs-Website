@@ -13,7 +13,7 @@ import heroImg from "../assets/Z4KKD.gif";
 import myself from "../assets/Myself.jpg";
 import project1 from "../assets/ZakksForms.png";
 import project2 from "../assets/DataVisualizationTool.png";
-import project3 from "../assets/ChatBotAI.png";
+import project3 from "../assets/UglyDuckies.png";
 import game3 from "../assets/game3.png";
 import game4 from "../assets/game4.png";
 
@@ -38,10 +38,13 @@ const Home = () => {
     },
     {
       img: project3,
-      title: "Chat Bot AI",
+      title: "Ugly Duckies Guild Website",
       description:
-        "Django + OpenAI chatbot with movie lookup helpers (OMDb).",
-      links: [{ label: "Open Source", url: "https://github.com/Z4KKD/Ai-ChatBot" }],
+        "A responsive React application designed for a World of Warcraft guild. Features dynamic animations, structured guild data, recruiter profiles, and custom CSS-driven motion design.",
+      links: [
+        { label: "Live Site", url: "https://uglyduckies.netlify.app/" }, 
+        { label: "Open Source", url: "https://github.com/Z4KKD/UglyDuckies-Guild-Website" },
+      ],
     },
     {
       img: game4,
