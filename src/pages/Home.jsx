@@ -49,7 +49,7 @@ const Home = () => {
     {
       img: game4,
       title: "Terminal Hero",
-      description: "Browser text RPG — craft, gamble, explore.",
+      description: "A browser-based text RPG with dungeon exploration, strategic combat, crafting, mini-games, and an interactive inventory system.",
       link: "https://z4kkd.itch.io/terminalhero",
     },
     {

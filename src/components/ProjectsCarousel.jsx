@@ -47,7 +47,7 @@ const ProjectsCarousel = ({ projects = [] }) => {
 
   return (
     <section className="projectsCarousel">
-      <h1>Top Projects & Games</h1>
+      <h1>Top Projects</h1>
       <div
         className="carouselContainer"
         ref={containerRef}
@@ -85,7 +85,7 @@ const ProjectsCarousel = ({ projects = [] }) => {
                     ))}
                     {project.link && (
                       <a href={project.link} target="_blank" rel="noreferrer">
-                        <button>Play</button>
+                        <button>Live Site</button>
                       </a>
                     )}
                   </div>
