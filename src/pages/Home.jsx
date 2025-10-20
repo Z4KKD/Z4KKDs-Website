@@ -12,8 +12,8 @@ import ParticlesBackground from "../components/ParticlesBackground";
 import heroImg from "../assets/Z4KKD.gif";
 import myself from "../assets/Myself.jpg";
 import project1 from "../assets/ZakksForms.png";
-import project2 from "../assets/UglyDuckies.png";
-import project3 from "../assets/DataVisualizationTool.png";
+import project2 from "../assets/IDVT.png";
+import project3 from "../assets/UglyDuckies.png";
 import game3 from "../assets/game3.png";
 import game4 from "../assets/game4.png";
 
@@ -31,6 +31,16 @@ const Home = () => {
     },
     {
       img: project2,
+      title: "Data Visualization Tool",
+      description:
+        "React + Flask, Upload CSV/Excel, build charts, real-time filtering (D3.js).",
+      links: [
+        { label: "Live Site", url: "https://uglyduckies.netlify.app/" }, 
+        { label: "Open Source", url: "https://github.com/Z4KKD/Data-visualization-tool" },
+      ],
+    },
+    {
+      img: project3,
       title: "Ugly Duckies Guild Website",
       description:
         "A responsive React application with dynamic animations, structured guild data, recruiter profiles, and custom CSS-driven motion design.",
@@ -38,13 +48,6 @@ const Home = () => {
         { label: "Live Site", url: "https://uglyduckies.netlify.app/" }, 
         { label: "Open Source", url: "https://github.com/Z4KKD/UglyDuckies-Guild-Website" },
       ],
-    },
-    {
-      img: project3,
-      title: "Data Visualization Tool",
-      description:
-        "Upload CSV/Excel, build charts, real-time filtering (D3.js).",
-      links: [{ label: "Open Source", url: "https://github.com/Z4KKD/Data-visualization-tool" }],
     },
     {
       img: game4,
