@@ -35,7 +35,7 @@ const Home = () => {
       description:
         "React + Flask, Upload CSV/Excel, build charts, real-time filtering (D3.js).",
       links: [
-        { label: "Live Site", url: "https://uglyduckies.netlify.app/" }, 
+        { label: "Live Site", url: "https://datavt.netlify.app/" }, 
         { label: "Open Source", url: "https://github.com/Z4KKD/Data-visualization-tool" },
       ],
     },
