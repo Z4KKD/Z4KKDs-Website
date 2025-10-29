@@ -41,7 +41,7 @@ const Home = () => {
     },
     {
       img: project3,
-      title: "Ugly Duckies Guild Website",
+      title: "Ugly Duckies Guild",
       description:
         "A responsive React application with dynamic animations, structured guild data, recruiter profiles, and custom CSS-driven motion design.",
       links: [
