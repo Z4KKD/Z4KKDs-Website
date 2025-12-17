@@ -70,7 +70,7 @@ const Home = () => {
         <HeroInteractive
           title="Zachary Duncan"
           subtitle="(Zakk)"
-          description="Full-Stack Software Engineer — React / .NET / FastAPI"
+          description="Full-Stack Developer"
           profileImg={myself}
           heroImg={heroImg}
         />

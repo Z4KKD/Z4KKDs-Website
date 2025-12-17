@@ -7,29 +7,28 @@ const experienceData = [
     role: "Software Engineer - Z4KKD (Freelance)",
     date: "April 2025 - Present",
     bullets: [
-      "Delivered 10+ web and SaaS applications with React (Vite), FastAPI, and .NET Core, emphasizing speed, responsiveness, and maintainability.",
-      "Designed REST APIs and integrated PostgreSQL/SQL Server databases, powering dynamic dashboards and reporting tools.",
-      "Collaborated with clients to deliver custom tools, dashboards, and automation scripts.",
-      "Reduced client app load times by up to 35% through async endpoints, caching, and payload optimization."
+      "Developed and maintained multiple full-stack web applications with React, .NET Core, and FastAPI/Flask, delivering solutions based on client needs and existing workflows.",
+      "Engineered dynamic dashboards, interactive data visualizations, and custom tools using D3.js, TailwindCSS, and PostgreSQL/SQLite, helping clients analyse their data.",
+      "Improved performance and responsiveness through ongoing UI updates, backend optimizations, and debugging while managing the full development lifecycle."
     ]
   },
   {
     role: "Software Developer - Ameritech Data Solutions",
     date: "February 2024 - March 2025",
     bullets: [
-      "Developed and supported C#/.NET Core logistics tools for 200+ operations users.",
-      "Optimized SQL Server and LINQ queries, improving reporting performance by 30%.",
-      "Built frontend and modular backend tools extending legacy systems while ensuring dashboard compatibility.",
-      "Collaborated closely with the founder and engineering team to complete high-impact tickets and drive improvements."
+      "Designed and maintained C#/.NET Core tools used daily by 100+ users, improving efficiency, productivity, and performance.",
+      "Modernized legacy codebases to be cleaner, more modular, and easier to maintain while adding new tools and features for business needs.",
+      "Resolved client tickets and fixed high-priority issues, collaborating with managers and the engineering team to deliver reliable solutions on time.",
+      "Optimized SQL Server and LINQ queries while developing a tool to archive unused database records, cutting load times by 20% and improving maintenance."
     ]
   },
   {
     role: "Independent Game Developer - Z4KKD (Itch.io)",
     date: "April 2020 - Jan 2023",
     bullets: [
-      "Designed modular UI/UX systems and backend logic in Unity (C#) and Unreal Engine.",
-      "Improved runtime performance by 20% through profiling, object pooling, and memory optimization.",
-      "Managed full development lifecycle: concept, implementation, testing, and deployment."
+      "Implemented frontend UI/UX and backend systems on Unity (C#), Unreal Engine (C++/Blueprints), and Godot (C#) while managing the full development lifecycles.",
+      "Delivered cross-platform game mechanics while improving runtime performance by 40% using profiling, object pooling, and memory optimization.",
+      "Trained AI models using machine learning to match player skill level and created gyroscope controls for mobile devices, enhancing overall gameplay."
     ]
   }
 ];
@@ -58,12 +57,9 @@ const ExperienceAccordion = () => {
   </div>
   <div className="accordionBody open">
     <p className="about-text">
-      Full Stack Software Engineer with 5+ years of experience building
-      production-grade web applications, APIs, and developer tools across
-      logistics, SaaS, and game development. Skilled in backend
-      optimization, modern frontend frameworks, and secure authentication.
-      Proven ability to ship fast and deliver high-value solutions that
-      scale.
+      Full-Stack Developer with experience building websites, APIs, software, SaaS, and games. 
+      Skilled in both frontend and backend development, with a focus on performance and clean, maintainable code. 
+      Proven track record of shipping features, solving problems, and delivering value quickly.
     </p>
   </div>
 </div>
