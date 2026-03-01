@@ -66,7 +66,10 @@ const Home = () => {
       img: game5,
       title: "PounceWay",
       description: "A 12h game jam browser arcade runner that works on mobile: jump, slide, dodge, and collect fish as Jax the greedy cat.",
-      link: "https://z4kkd.itch.io/pounceway",
+            links: [
+        { label: "Live Site", url: "https://z4kkd.itch.io/pounceway" }, 
+        { label: "Open Source", url: "https://github.com/Z4KKD/PounceWay-GameJam-OpenSource" },
+      ],
     },
   ];
 
