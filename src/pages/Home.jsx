@@ -51,6 +51,15 @@ const Home = () => {
       ],
     },
     {
+      img: game5,
+      title: "PounceWay",
+      description: "A browser arcade runner that works on mobile: jump, slide, dodge, and collect fish as Jax the greedy cat. (Made in 12 hours for game jam)",
+            links: [
+        { label: "Live Site", url: "https://z4kkd.itch.io/pounceway" }, 
+        { label: "Open Source", url: "https://github.com/Z4KKD/PounceWay-GameJam-OpenSource" },
+      ],
+    },
+    {
       img: game4,
       title: "Terminal Hero",
       description: "A browser-based text RPG with dungeon exploration, strategic combat, crafting, mini-games, and an interactive inventory system.",
@@ -61,15 +70,6 @@ const Home = () => {
       title: "Downhill Hurts",
       description: "Downhill snowboarding survival game.",
       link: "https://z4kkd.itch.io/downhill-hurts",
-    },
-    {
-      img: game5,
-      title: "PounceWay",
-      description: "A 12h game jam browser arcade runner that works on mobile: jump, slide, dodge, and collect fish as Jax the greedy cat.",
-            links: [
-        { label: "Live Site", url: "https://z4kkd.itch.io/pounceway" }, 
-        { label: "Open Source", url: "https://github.com/Z4KKD/PounceWay-GameJam-OpenSource" },
-      ],
     },
   ];
 
