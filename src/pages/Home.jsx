@@ -16,6 +16,7 @@ import project2 from "../assets/IDVT.png";
 import project3 from "../assets/UglyDuckies.png";
 import game3 from "../assets/game3.png";
 import game4 from "../assets/game4.png";
+import game5 from "../assets/game5.png";
 
 const Home = () => {
   const projects = [
@@ -60,6 +61,12 @@ const Home = () => {
       title: "Downhill Hurts",
       description: "Downhill snowboarding survival game.",
       link: "https://z4kkd.itch.io/downhill-hurts",
+    },
+    {
+      img: game5,
+      title: "PounceWay",
+      description: "A 12h game jam browser arcade runner that works on mobile: jump, slide, dodge, and collect fish as Jax the greedy cat.",
+      link: "https://z4kkd.itch.io/pounceway",
     },
   ];
 
