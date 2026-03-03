@@ -17,6 +17,7 @@ import project3 from "../assets/UglyDuckies.png";
 import game3 from "../assets/game3.png";
 import game4 from "../assets/game4.png";
 import game5 from "../assets/game5.png";
+import game6 from "../assets/game6.png";
 
 const Home = () => {
   const projects = [
@@ -58,6 +59,12 @@ const Home = () => {
         { label: "Live Site", url: "https://z4kkd.itch.io/pounceway" }, 
         { label: "Open Source", url: "https://github.com/Z4KKD/PounceWay-GameJam-OpenSource" },
       ],
+    },
+    {
+      img: game6,
+      title: "Poly Off",
+      description: "Poly Off is a 24-hour game jam auto-battler built in Phaser for browsers, centered on strategic counterplay, adaptive AI, and fast round-based drafting/combat.",
+      link: "https://z4kkd.itch.io/polyoff",
     },
     {
       img: game4,
