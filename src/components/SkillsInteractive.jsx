@@ -3,12 +3,11 @@ import React, { useEffect } from "react";
 import "../styles/skillsInteractive.css";
 
 const skillsData = [
-  { category: "Languages", items: ["C#", "Python", "JavaScript", "TypeScript", "HTML", "CSS"], level: 85 },
-  { category: "Frontend", items: ["React", "Next.js", "Angular"], level: 70 },
-  { category: "Backend & Frameworks", items: [".NET Core", "FastAPI", "Node.js/Express", "Django", "Flask"], level: 70 },
-  { category: "Databases", items: ["PostgreSQL", "SQL Server", "MongoDB", "SQLite", "Azure SQL"], level: 70 },
-  { category: "Cloud & DevOps", items: ["Docker", "Git", "Azure", "AWS", "CI/CD"], level: 60 },
-  { category: "Testing & Methodologies", items: ["Unit/Integration Testing (xUnit, Pytest, Jest)", "Agile/Scrum"], level: 60 },
+  { category: "Languages", items: ["C#", "Python", "JavaScript", "TypeScript"], level: 75 },
+  { category: "Frontend", items: ["React", "Next.js", "Blazor", "HTML", "CSS"], level: 80 },
+  { category: "Backend", items: ["ASP.NET Core (.NET)", "Node.js", "FastAPI"], level: 90 },
+  { category: "Databases", items: ["PostgreSQL", "SQL Server", "SQLite", "Azure SQL", "Entity Framework Core"], level: 85 },
+  { category: "DevOps & Tools", items: ["Docker", "Git", "Swagger", "Postman", "CI/CD Pipelines", "REST APIs", "Unit Testing"], level: 95 },
 ];
 
 const SkillsInteractive = () => {
