@@ -1,7 +1,8 @@
 .skillsInteractive {
+  width: 100%;
   text-align: center;
   background: transparent; /* let particles show */
-  padding: 3rem 1rem;
+  padding: 1rem 1rem;
 }
 
 .skillsInteractive h1 {
@@ -13,18 +14,18 @@
 }
 
 .skillsGrid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 25px;
-  max-width: 1200px; /* prevent spreading too wide */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 
 .skillCard {
-  width: 170px;
-  height: 220px;
+  width: 100%;
+  min-height: 240px;
+  height: 240px;
   perspective: 1200px;
   cursor: pointer;
 }
@@ -64,7 +65,7 @@
 
 /* Front card */
 .cardFront h2 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: 0.5px;
 }
@@ -74,48 +75,54 @@
   transform: rotateY(180deg);
 }
 
+.proficiencyTitle {
+  font-size: 1rem;
+  color: #d7f5c7;
+  margin: 0 0 10px;
+}
+
 .cardBack ul {
   list-style: none;
+  width: 100%;
   padding: 0;
   margin: 0 0 15px 0;
-  text-align: center;
+  text-align: left;
 }
 
 .cardBack li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
   margin: 4px 0;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  gap: 10px;
 }
 
-/* Progress bar styling */
-.progressBar {
-  width: 80%;
-  height: 8px;
-  background: rgba(94,165,47,0.2);
-  border-radius: 6px;
-  overflow: hidden;
-}
-
-.progress {
-  height: 100%;
-  background: #5ea52f;
-  border-radius: 6px;
-  transition: width 1.2s ease-in-out;
+.skillItemLevel {
+  color: #95ff4f;
+  font-size: 0.82rem;
+  white-space: nowrap;
 }
 
 /* Responsive adjustments */
 @media screen and (max-width: 960px) {
   .skillsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
     gap: 15px;
   }
   .skillCard {
-    width: 180px;
-    height: 180px;
+    min-height: 220px;
+    height: 220px;
   }
 }
 
 @media screen and (max-width: 480px) {
+  .skillsGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .skillCard {
-    width: 150px;
-    height: 150px;
+    min-height: 180px;
+    height: 180px;
   }
 }

@@ -91,11 +91,9 @@ const Home = () => {
           profileImg={myself}
           heroImg={heroImg}
         />
-         <ParticlesBackground count={25} />
-        <section className="app-panel compact-row">
-          <ExperienceAccordion />
-          <SkillsInteractive />
-        </section>
+        <ParticlesBackground count={25} />
+        <SkillsInteractive />
+        <ExperienceAccordion />
 
         {/** Projects carousel */}
         <ProjectsCarousel projects={projects} />

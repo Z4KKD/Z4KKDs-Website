@@ -33,6 +33,7 @@
 
 /* Accordion Header (clickable area) */
 .accordionHeader {
+  position: relative;
   padding: 22px 30px;
   display: flex;
   justify-content: space-between;
@@ -58,9 +59,35 @@
   font-size: 1.4rem;
 }
 
-.accordionHeader span {
+.accordionHeader .accordionDate {
   color: #ccc;
   font-size: 1.1rem;
+}
+
+.accordionMeta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.expandHint {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  color: #95ff4f;
+  font-size: 0.82rem;
+  letter-spacing: 0.2px;
+  opacity: 0;
+  transform: translate(-50%, -40%);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+}
+
+.accordionHeader.clickable:hover .expandHint,
+.accordionHeader.clickable:focus-within .expandHint {
+  opacity: 1;
+  transform: translate(-50%, -50%);
 }
 
 /* Accordion Body Animation */
@@ -158,7 +185,7 @@
     font-size: 1.1rem;
   }
 
-  .accordionHeader span {
+  .accordionHeader .accordionDate {
     font-size: 0.95rem;
   }
 

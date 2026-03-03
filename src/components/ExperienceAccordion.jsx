@@ -73,7 +73,10 @@ const ExperienceAccordion = () => {
             onClick={() => toggleSection(`exp-${idx}`)}
           >
             <h2>{exp.role}</h2>
-            <span>{exp.date}</span>
+            <div className="accordionMeta">
+              <span className="accordionDate">{exp.date}</span>
+              <span className="expandHint">(Click to expand)</span>
+            </div>
           </div>
           <div
             className="accordionBody"
@@ -96,7 +99,10 @@ const ExperienceAccordion = () => {
           onClick={() => toggleSection("education")}
         >
           <h2>Education - Strayer University</h2>
-          <span>2020 - 2025</span>
+          <div className="accordionMeta">
+            <span className="accordionDate">2020 - 2025</span>
+            <span className="expandHint">(Click to expand)</span>
+          </div>
         </div>
         <div
           className="accordionBody"
