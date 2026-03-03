@@ -63,7 +63,7 @@ const Home = () => {
     {
       img: game6,
       title: "Poly Off",
-      description: "Poly Off is a 24-hour game jam auto-battler built in Phaser for browsers, centered on strategic counterplay, adaptive AI, and fast round-based drafting/combat.",
+      description: "Poly Off is a auto-battler built in Phaser for browsers, centered on strategic counterplay, adaptive AI, and fast round-based drafting/combat. (Made in 24 hours for game jam)",
       link: "https://z4kkd.itch.io/polyoff",
     },
     {
