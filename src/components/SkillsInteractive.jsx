@@ -7,7 +7,7 @@ const skillsData = [
   { category: "Frontend", items: ["React", "Next.js", "Blazor", "HTML", "CSS"], level: 80 },
   { category: "Backend", items: ["ASP.NET Core (.NET)", "Node.js", "FastAPI"], level: 90 },
   { category: "Databases", items: ["PostgreSQL", "SQL Server", "SQLite", "Azure SQL", "Entity Framework Core"], level: 85 },
-  { category: "DevOps & Tools", items: ["Docker", "Git", "Swagger", "Postman", "CI/CD Pipelines", "REST APIs", "Unit Testing"], level: 95 },
+  { category: "DevOps & Tools", items: ["Docker", "Git", "CI/CD Pipelines", "REST APIs", "Unit Testing"], level: 95 },
 ];
 
 const SkillsInteractive = () => {
